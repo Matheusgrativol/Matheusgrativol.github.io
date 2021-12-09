@@ -1,7 +1,7 @@
 ## Olá! Eu sou o Matheus Grativol! 
 
 - 🎓 Estudando React
-- 💻 Proucurando trabalho..
+- 💻 procurando trabalho..
 - 🤵 Pronomes: ele/dele
 
 <div align="center">
