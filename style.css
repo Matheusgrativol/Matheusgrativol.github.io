@@ -406,6 +406,18 @@ em {
     max-width: 350px;
 }
 
+.modules-note {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.modules-note strong {
+    color: var(--ink);
+}
+
 .contact {
     background: var(--ink);
     color: #f6f7ef;
