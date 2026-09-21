@@ -418,6 +418,95 @@ em {
     color: var(--ink);
 }
 
+.projects {
+    border-top: 1px solid var(--line);
+}
+
+.projects-intro {
+    max-width: 560px;
+    margin: -18px 0 34px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.project-grid--professional {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid var(--line);
+    background: #f9f8f3;
+}
+
+.project-type {
+    margin-bottom: 28px;
+    color: #77a628;
+    font: 11px 'DM Mono', monospace;
+    letter-spacing: .09em;
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+    font-size: 23px;
+    letter-spacing: -.05em;
+}
+
+.project-card > p:not(.project-type) {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.project-tags span {
+    padding: 6px 9px;
+    border: 1px solid #bfc9bb;
+    border-radius: 100px;
+    font: 10px 'DM Mono', monospace;
+}
+
+.project-card a {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.project-card a:hover {
+    color: #77a628;
+}
+
+.project-card--professional {
+    min-height: 335px;
+}
+
+.project-context {
+    margin-top: 20px;
+    color: var(--muted);
+    font: 10px 'DM Mono', monospace;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
 .contact {
     background: var(--ink);
     color: #f6f7ef;
@@ -526,6 +615,19 @@ em {
     .job {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-intro {
+        margin-top: -22px;
+    }
+
+    .project-card {
+        min-height: 0;
+        padding: 25px;
     }
 
     .job-period {
